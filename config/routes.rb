@@ -1,6 +1,6 @@
 Rollcall::Application.routes.draw do
   
-root "courses#show"
+root "courses#index"
   # Routes for the Attendance resource:
   # CREATE
   get '/attendances/new', controller: 'attendances', action: 'new', as: 'new_attendance'

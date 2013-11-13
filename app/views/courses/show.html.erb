@@ -12,4 +12,12 @@
   <dt>Title</dt>
   <dd><%= @course.title %></dd>
 
+  <h2>Meetings</h2>
+  <% @meetings.each do|meetingname|  %>
+ <ul>
+ 	<li>	
+Meeting ID: <%= meetingname.id %>, Held on: <%= meetingname.held_on %>
+	</li>
+</ul>  
+  <% end %>
 </dl>

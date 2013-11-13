@@ -7,6 +7,19 @@
   <dd><%= @meeting.held_on %></dd>
 
   <dt>Course</dt>
-  <dd><%= @meeting.course_id %></dd>
+  <dd><%= @course.department %> <%= @course.number %> <%= @course.title %></dd>
+
+<h2>Students who attended</h2>
+  <% @students.each do|studentname|  %>
+ <ul>
+ 	<li>	
+	<%= studentname.first_name %> <%= studentname.last_name %>
+	</li>
+</ul>  
+  <% end %>
+
+ 
+
+
 
 </dl>
